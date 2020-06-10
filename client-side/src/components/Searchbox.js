@@ -10,7 +10,7 @@ function Searchbox(props) {
   };
   console.log(inputValue);
   function handleSearch() {
-    axios.post("http://localhost:5000", input).then((res) => {
+    axios.post("/", input).then((res) => {
       props.setData(res.data);
     });
   }
